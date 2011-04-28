@@ -44,7 +44,7 @@ class DBConnection {
        return PDO::getAvailableDrivers();
     }
 
-    public function getActive() {
+    public function getAlive() {
        return $this->_active;
     }
 
@@ -126,7 +126,7 @@ class DBConnection {
 	  
 
 	public function lastInsertId() {
-	  $this->setActive(true);
+	  $this->setAlive(true);
 	  return $this->_pdo->lastInsertId();
 	}
 }
