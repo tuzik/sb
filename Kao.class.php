@@ -17,7 +17,7 @@ class Kao {
   }
 
   public static function profile($statue,$class,$more) {
-	error_log(date('Y-m-d h:i:s')." ".microtime()." PROFILE\t(".$statue.") AT ".$class.".class.php INFO ".$more."\n",3,'kao.log');
+	error_log(date('Y-m-d h:i:s')." ".microtime(true)." PROFILE\t(".$statue.") AT ".$class.".class.php INFO ".$more."\n",3,'kao.log');
   }
   
   
