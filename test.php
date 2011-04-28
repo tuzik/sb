@@ -8,7 +8,7 @@ $config = array('host' => '120.132.144.174',
 		  'username' => 'aspire',
 		  'password' => 'aspire.de');
 
-$db = new DBConnection($config);
+$db = new DBConnection($config,$debug = true, $profile = true);
 
 var_dump($db->query('select * from user_confirm'));
 
