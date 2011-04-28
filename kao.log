@@ -1,0 +1,26 @@
+2011-04-28 02:29:57 1303972197.4158 PROFILE	(begin) AT DBConnection.class.php INFO select * from user_confirm
+2011-04-28 02:29:57 1303972197.4174 PROFILE	(end) AT DBConnection.class.php INFO select * from user_confirm
+2011-04-28 02:31:18 1303972278.1403 PROFILE	(begin) AT DBConnection.class.php INFO select * from user_confirm
+2011-04-28 02:31:18 1303972278.1418 PROFILE	(end) AT DBConnection.class.php INFO select * from user_confirm
+2011-04-28 02:31:19 1303972279.0708 PROFILE	(begin) AT DBConnection.class.php INFO select * from user_confirm
+2011-04-28 02:31:19 1303972279.0722 PROFILE	(end) AT DBConnection.class.php INFO select * from user_confirm
+2011-04-28 02:31:19 1303972279.9621 PROFILE	(begin) AT DBConnection.class.php INFO select * from user_confirm
+2011-04-28 02:31:19 1303972279.9636 PROFILE	(end) AT DBConnection.class.php INFO select * from user_confirm
+2011-04-28 02:32:28 1303972348.3942 PROFILE	(begin) AT DBConnection.class.php INFO insert into user_confirm (`box`,`statue`,'code') values ('111111','123','2212121')
+2011-04-28 02:32:28 1303972348.3948 PROFILE	(end) AT DBConnection.class.php INFO insert into user_confirm (`box`,`statue`,'code') values ('111111','123','2212121')
+2011-04-28 02:32:30 1303972350.442 PROFILE	(begin) AT DBConnection.class.php INFO insert into user_confirm (`box`,`statue`,'code') values ('111111','123','2212121')
+2011-04-28 02:32:30 1303972350.4426 PROFILE	(end) AT DBConnection.class.php INFO insert into user_confirm (`box`,`statue`,'code') values ('111111','123','2212121')
+2011-04-28 02:36:15 1303972575.6026 PROFILE	(begin) AT DBConnection.class.php INFO  insert into user_confirm (`user_id` , `type`,`code`,`status`,`time_create`)values (12112,'mobile','111','invalid','221111')
+2011-04-28 02:36:15 1303972575.649 PROFILE	(end) AT DBConnection.class.php INFO  insert into user_confirm (`user_id` , `type`,`code`,`status`,`time_create`)values (12112,'mobile','111','invalid','221111')
+2011-04-28 02:37:00 1303972620.9401 PROFILE	(begin) AT DBConnection.class.php INFO  insert into user_confirm (`user_id` , `type`,`code`,`status`,`time_create`)values (12112,'mobile','111','invalid','221111')
+2011-04-28 02:37:00 1303972620.9855 PROFILE	(end) AT DBConnection.class.php INFO  insert into user_confirm (`user_id` , `type`,`code`,`status`,`time_create`)values (12112,'mobile','111','invalid','221111')
+2011-04-28 02:37:00 1303972620.9858 PROFILE	(begin) AT DBConnection.class.php INFO select * from user_confirm
+2011-04-28 02:37:00 1303972620.9901 PROFILE	(end) AT DBConnection.class.php INFO select * from user_confirm
+2011-04-28 02:38:24 1303972704.2739 PROFILE	(begin) AT DBConnection.class.php INFO  insert into user_confirm (`user_id` , `type`,`code`,`status`,`time_create`)values (12112,'mobile','111','invalid','221111')
+2011-04-28 02:38:24 1303972704.3242 PROFILE	(end) AT DBConnection.class.php INFO  insert into user_confirm (`user_id` , `type`,`code`,`status`,`time_create`)values (12112,'mobile','111','invalid','221111')
+2011-04-28 02:38:24 1303972704.3244 PROFILE	(begin) AT DBConnection.class.php INFO  insert into user_confirm (`user_id` , `type`,`code`,`status`,`time_create`)values (1112112,    'mobile','111','invalid','221111')
+2011-04-28 02:38:24 1303972704.3316 PROFILE	(end) AT DBConnection.class.php INFO  insert into user_confirm (`user_id` , `type`,`code`,`status`,`time_create`)values (1112112,    'mobile','111','invalid','221111')
+2011-04-28 02:38:24 1303972704.3318 PROFILE	(begin) AT DBConnection.class.php INFO  insert into user_confirm (`user_id` , `type`,`code`,`status`,`time_create`)values (12112,    'mobile','111','invalid','22111199')
+2011-04-28 02:38:24 1303972704.3376 PROFILE	(end) AT DBConnection.class.php INFO  insert into user_confirm (`user_id` , `type`,`code`,`status`,`time_create`)values (12112,    'mobile','111','invalid','22111199')
+2011-04-28 02:38:24 1303972704.3377 PROFILE	(begin) AT DBConnection.class.php INFO select * from user_confirm
+2011-04-28 02:38:24 1303972704.3421 PROFILE	(end) AT DBConnection.class.php INFO select * from user_confirm
