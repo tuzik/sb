@@ -22,7 +22,7 @@ class DBC {
 	
   
     public function __construct(array $config, $debug = false, $profile = false) {
-	  if(empty($config)) throw Kao::Exception("DBConnection construct need one argument but NULL given");
+	  if(empty($config)) throw NJ::Exception("DBConnection construct need one argument but NULL given");
 	  
 	  
 	  $this->db_conf = "mysql:dbname={$config['db']};host={$config['host']};port={$config['port']}";
@@ -63,7 +63,7 @@ class DBC {
 
 	protected function open() {
 	  if($this->_pdo === null) {
-		if(empty($this->db_conf)) throw Kao::Exception("DBConnection db_conf is NULL");
+		if(empty($this->db_conf)) throw NJ::Exception("DBConnection db_conf is NULL");
 		try {
 		  $attributes = array(
 			PDO::ATTR_EMULATE_PREPARES   => true,
@@ -75,9 +75,9 @@ class DBC {
 		}
 		catch(PDOException $e) {
 		  if($this->db_debug)
-			Kao::debug("DBConnection failed to open",array('error' => $e->getMessage(),'code' => $e->getCode(), 'info' => $e->errorInfo()));
+			NJ::debug("DBConnection failed to open",array('error' => $e->getMessage(),'code' => $e->getCode(), 'info' => $e->errorInfo()));
 		  else
-			throw Kao::Exception("DBConnection failed to open,error: ".$e->getMessage());
+			throw NJ::Exception("DBConnection failed to open,error: ".$e->getMessage());
 		}
 	  }
 	}
@@ -90,24 +90,24 @@ class DBC {
 	public function exec($sql) {
 	  $this->setAlive(true);
 	  if($this->db_profiling)
-		Kao::profile("begin",get_class($this),$sql);
+		NJ::profile("begin",get_class($this),$sql);
 	  try {
 		$n = $this->_pdo->exec($sql);
 
 		if($this->db_profiling)
-		  Kao::profile("end",get_class($this),$sql);
+		  NJ::profile("end",get_class($this),$sql);
 		
 		return $n;
 	  }
 	  catch (Exception $e) {
-		throw Kao::Exception("DBConnection failed to exec sql,error: ".$e->getMessage());
+		throw NJ::Exception("DBConnection failed to exec sql,error: ".$e->getMessage());
 	  }
 	}
 
 	public function query($sql) {
 	  $this->setAlive(true);
 	  if($this->db_profiling)
-		Kao::profile("begin",get_class($this),$sql);
+		NJ::profile("begin",get_class($this),$sql);
 	  try {
 		$statement = $this->_pdo->prepare($sql);
 		$statement->execute();
@@ -115,12 +115,12 @@ class DBC {
 		$r = $statement->fetchAll();
 		$statement->closeCursor();
 		if($this->db_profiling)
-		  Kao::profile("end",get_class($this),$sql);
+		  NJ::profile("end",get_class($this),$sql);
 		
 		return $r;
 	  }
 	  catch (Exception $e) {
-		throw Kao::Exception("DBConnection failed to query sql,error: ".$e->getMessage());
+		throw NJ::Exception("DBConnection failed to query sql,error: ".$e->getMessage());
 	  }
 	}
 	  
