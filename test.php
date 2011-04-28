@@ -12,3 +12,9 @@ $db = new DBConnection($config);
 
 var_dump($db->query('select * from user_confirm'));
 
+var_dump($db->_pdo);
+
+$db2 = new DBConnection($config);
+var_dump($db->_pdo);
+
+
