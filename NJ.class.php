@@ -1,6 +1,6 @@
 <?php
 
-class Kao {
+class NJ {
   
 
   

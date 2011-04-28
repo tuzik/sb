@@ -6,7 +6,7 @@
  * @copyright Copyright &copy; 139.com
  */
 
-class DBConnection {
+class DBC {
   
     public $db_conf;
 
