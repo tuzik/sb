@@ -5,11 +5,11 @@ class Kao {
 
   
   public static function Exception($e) {
-	error_log(date('Y-m-d h:i:s:u')." EXCEPTION\t".$e."\n",3,'kao.log');
+	error_log(date('Y-m-d h:i:s')." EXCEPTION\t".$e."\n",3,'kao.log');
   }
 
   public static function debug($info,array $more) {
-	$str = date('Y-m-d h:i:s:u')." DEBUG\t".$info."\n";
+	$str = date('Y-m-d h:i:s')." DEBUG\t".$info."\n";
 	foreach($more as $k => $v) {
 	  $str .= "\t\t".$k."\t".$v."\n";
 	}
@@ -17,7 +17,7 @@ class Kao {
   }
 
   public static function profile($statue,$class,$more) {
-	error_log(date('Y-m-d h:i:s:u')." PROFILE\t(".$statue.") AT ".$class.".class.php INFO ".$more."\n",3,'kao.log');
+	error_log(date('Y-m-d h:i:s')." ".microtime()." PROFILE\t(".$statue.") AT ".$class.".class.php INFO ".$more."\n",3,'kao.log');
   }
   
   
