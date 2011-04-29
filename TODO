@@ -1,0 +1,52 @@
+Author: Tuzik Gaffey
+Date: 2011-04-29 17:12:27 CST
+
+
+Table of Contents
+=================
+1 NJ Lib for php 
+    1.1 What's NJ? 
+    1.2 Class 
+        1.2.1 datastore 
+        1.2.2 structure 
+        1.2.3 utils 
+        1.2.4 io 
+
+
+1 NJ Lib for php 
+~~~~~~~~~~~~~~~~~
+
+1.1 What's NJ? 
+===============
+
+NJ is an abbreviation for chinese pinyin word "Nan J" which is China Mobile Southern Hall of Wisdom where our team work.:
+
+1.2 Class 
+==========
+
+1.2.1 datastore 
+----------------
+
+1. DB
+2. Cache
+3. File
+4. Web service
+
+1.2.2 structure 
+----------------
+
+1. Queue
+2. Stack
+
+1.2.3 utils 
+------------
+
+1. Log
+2. Console
+3. Notify
+
+1.2.4 io 
+---------
+
+1. data format(json/html)
+2. thrift
