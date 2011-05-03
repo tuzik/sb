@@ -2,11 +2,11 @@
 /**
  * DBConnection class file
  *
- * @author Cai JingMing <caijingming@aspirehld.com>
+ * @author Gaffey Cai <caijingming@staff.139.com>
  * @copyright Copyright &copy; 139.com
  */
 
-class DBC {
+class NJ_DBC {
   
     public $db_conf;
 

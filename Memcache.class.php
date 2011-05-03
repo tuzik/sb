@@ -1,6 +1,6 @@
 <?php
 
-class Memcache extends Cache {
+class NJ_Memcache extends NJ_Cache {
   
   private $_cache = null;
   

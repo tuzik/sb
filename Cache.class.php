@@ -20,7 +20,7 @@
 
 
 
-abstract class Cache implements ArrayAccess {
+abstract class NJ_Cache implements ArrayAccess {
 
   protected $serialize = true;
   

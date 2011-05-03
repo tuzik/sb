@@ -1,6 +1,6 @@
 <?php
 
-class Fscache extends Cache {
+class NJ_Fscache extends NJ_Cache {
 
   public $_fspath;
   
