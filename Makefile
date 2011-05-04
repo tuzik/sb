@@ -21,5 +21,6 @@ build:
 
 install:
 	@$(MKDIR) $(NJR)
+	@chmod -R 755 $(NJR)
 	@cp -rf build/ $(NJR)
 	echo "NJR has been installed in /usr/share/NJR"
