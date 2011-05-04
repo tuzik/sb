@@ -1,0 +1,49 @@
+
+Trinket
+===================
+NJR(NanJi Repository) is the next generation PHP library for developing web applications.
+
+"NJ" is a code name for this project,since "Nan Ji" where we work at.
+
+
+PHP Dependencies
+===================
+__Version:__
+
+ * PHP 5+
+
+__Modules:__
+
+ * [memcached](http://pecl.php.net/package/memcached)
+ * [pcre](http://php.net/manual/en/book.pcre.php)
+ * [curl](http://php.net/manual/en/book.curl.php)
+ * [PDO](http://php.net/manual/en/book.pdo.php)
+ * [APC](http://php.net/manual/en/book.apc.php) *recommended but not required.*
+ 
+
+Installing Locally
+==================
+_Note that this install currently requires read/write permission at /usr/share/ where NJR will be put under.
+* `sudo make install`
+
+
+After Install
+==================
+* Define NJR path like this:
+  <code>defined('NJR') or define('NJR','/usr/share/NJR/');</code>
+
+* Import NJR lib in your code as follows:
+  <code>require("/usr/share/NJR/NJ.php");</code>
+
+* Load and run NJ_XXX as you wish.
+
+
+Todo (after alpha)
+==================
+* Simple implement of data structure such as Queue,Stack...
+
+* Provide functionalities specific to console requests
+
+
+
+
