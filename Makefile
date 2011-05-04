@@ -19,8 +19,8 @@ build:
 	@cp $(CLASSES) build/NJ/
 	cp $(BASE) build/
 
-install:
+install:build
 	@$(MKDIR) $(NJR)
 	@chmod -R 755 $(NJR)
-	@cp -rf build/ $(NJR)
+	@cp -rf build/* $(NJR)
 	echo "NJR has been installed in /usr/share/NJR"
