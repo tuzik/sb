@@ -17,9 +17,9 @@ __Modules:__
  * [memcached](http://pecl.php.net/package/memcached)
  * [pcre](http://php.net/manual/en/book.pcre.php)
  * [curl](http://php.net/manual/en/book.curl.php)
- * [PDO](http://php.net/manual/en/book.pdo.php)
- * [APC](http://php.net/manual/en/book.apc.php) *recommended but not required.*
- 
+ * [pdo](http://php.net/manual/en/book.pdo.php)
+ * [apc](http://php.net/manual/en/book.apc.php) *recommended but not required.*
+ * [semaphore](php.net/manual/en/book.sem.php) *recommended but not required.*
 
 Installing Locally
 ==================
